@@ -14,7 +14,7 @@ import org.testng.annotations.AfterMethod;
 public class LoginScenario {
 	WebDriver driver;
 
-	@Test
+	@Test (priority = 3)
 	public void inValidLogin() {
 		WebElement username = driver.findElement(By.name("username")); 
 		username.sendKeys("Test");
@@ -26,10 +26,10 @@ public class LoginScenario {
 		WebElement validationMessage = driver.findElement(By.xpath("//*[text()='Invalid credentials']"));
 		validationMessage.isDisplayed();
 		System.out.println("Validation: " +validationMessage);
-		System.out.println("Validation message has been displayed");
+		System.out.println("3: Validation message has been displayed");
 	}
 
-	@Test
+	@Test (priority = 1)
 	public void validLogin() {
 		WebElement username = driver.findElement(By.name("username")); 
 		username.sendKeys("Admin");
@@ -37,10 +37,10 @@ public class LoginScenario {
 		password.sendKeys("admin123");
 		WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']")); 
 		loginButton.click();
-		System.out.println("Login successful");
+		System.out.println("1: Login successful");
 	}
 
-	@Test
+	@Test 
 	public void blankLogin() {
 		WebElement username = driver.findElement(By.name("username")); 
 		username.sendKeys("  ");
@@ -48,17 +48,17 @@ public class LoginScenario {
 		password.sendKeys("  ");
 		WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']")); 
 		loginButton.click();
-		System.out.println("Validation Messages of pass and user");
+		System.out.println("2: Validation Messages of pass and user");
 	}
 
-	@Test
+	@Test 
 	public void inValidPass() {
 		WebElement username = driver.findElement(By.name("username")); 
 		username.sendKeys("Admin");
 		
 		WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']")); 
 		loginButton.click();
-		System.out.println("Validation Messages of pass");
+		System.out.println("4: Validation Messages of pass");
 	}
 
 	@BeforeMethod

@@ -1,61 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61469" started-at="2022-10-29T08:47:10 IST" finished-at="2022-10-29T08:48:12 IST">
+  <suite name="Default suite" duration-ms="16924" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:46 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61469" started-at="2022-10-29T08:47:10 IST" finished-at="2022-10-29T08:48:12 IST">
-      <class name="core.LoginScenario">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="beforeMethod" is-config="true" duration-ms="16371" started-at="2022-10-29T08:47:10 IST" finished-at="2022-10-29T08:47:27 IST">
+    <test name="Default test" duration-ms="16924" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:46 IST">
+      <class name="test.DependsOnLogin">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="beforeTest" is-config="true" duration-ms="10658" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:40 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="blankLogin()[pri:0, instance:core.LoginScenario@aa12dd]" name="blankLogin" duration-ms="1212" started-at="2022-10-29T08:47:27 IST" finished-at="2022-10-29T08:47:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blankLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="afterMethod" is-config="true" duration-ms="1201" started-at="2022-10-29T08:47:28 IST" finished-at="2022-10-29T08:47:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="beforeMethod" is-config="true" duration-ms="10788" started-at="2022-10-29T08:47:29 IST" finished-at="2022-10-29T08:47:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="inValidLogin()[pri:0, instance:core.LoginScenario@aa12dd]" name="inValidLogin" duration-ms="4918" started-at="2022-10-29T08:47:40 IST" finished-at="2022-10-29T08:47:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inValidLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="afterMethod" is-config="true" duration-ms="1293" started-at="2022-10-29T08:47:45 IST" finished-at="2022-10-29T08:47:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="beforeMethod" is-config="true" duration-ms="12843" started-at="2022-10-29T08:47:46 IST" finished-at="2022-10-29T08:47:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="inValidPass()[pri:0, instance:core.LoginScenario@aa12dd]" name="inValidPass" duration-ms="908" started-at="2022-10-29T08:47:59 IST" finished-at="2022-10-29T08:48:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inValidPass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="afterMethod" is-config="true" duration-ms="775" started-at="2022-10-29T08:48:00 IST" finished-at="2022-10-29T08:48:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="beforeMethod" is-config="true" duration-ms="9245" started-at="2022-10-29T08:48:01 IST" finished-at="2022-10-29T08:48:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:core.LoginScenario@aa12dd]" name="validLogin" duration-ms="1086" started-at="2022-10-29T08:48:10 IST" finished-at="2022-10-29T08:48:11 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="validLogin" duration-ms="874" started-at="2022-10-30T08:55:40 IST" finished-at="2022-10-30T08:55:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:core.LoginScenario@aa12dd]" name="afterMethod" is-config="true" duration-ms="762" started-at="2022-10-29T08:48:11 IST" finished-at="2022-10-29T08:48:12 IST">
+        <test-method status="PASS" signature="pimTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="pimTest" duration-ms="3760" started-at="2022-10-30T08:55:40 IST" depends-on-methods="test.DependsOnLogin.validLogin" finished-at="2022-10-30T08:55:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- core.LoginScenario -->
+        </test-method> <!-- pimTest -->
+        <test-method status="PASS" signature="addEmployeeTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="addEmployeeTest" duration-ms="779" started-at="2022-10-30T08:55:44 IST" depends-on-methods="test.DependsOnLogin.pimTest" finished-at="2022-10-30T08:55:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="afterTest" is-config="true" duration-ms="802" started-at="2022-10-30T08:55:45 IST" finished-at="2022-10-30T08:55:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.DependsOnLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
