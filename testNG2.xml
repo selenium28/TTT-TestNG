@@ -2,8 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="false" name="Suite">
   <test name="Test">
+  <groups>
+  	<run>
+  		<include name ="smoke"/>
+  	</run>
+  </groups>
     <classes>
-      <class name="test.TestNGAnnotations"/>
+      <class name="test.Grouping"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

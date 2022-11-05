@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16924" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:46 IST">
+  <suite name="Suite" duration-ms="81" started-at="2022-11-05T09:09:42 IST" finished-at="2022-11-05T09:09:42 IST">
     <groups>
+      <group name="Regression">
+        <method signature="Grouping.testcaseFive()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseFive" class="test.Grouping"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="Grouping.testcaseOne()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseOne" class="test.Grouping"/>
+        <method signature="Grouping.testcaseTwo()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseTwo" class="test.Grouping"/>
+        <method signature="Grouping.testcaseThree()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseThree" class="test.Grouping"/>
+        <method signature="Grouping.testcaseFour()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseFour" class="test.Grouping"/>
+        <method signature="Grouping.testcaseFive()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseFive" class="test.Grouping"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="16924" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:46 IST">
-      <class name="test.DependsOnLogin">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="beforeTest" is-config="true" duration-ms="10658" started-at="2022-10-30T08:55:29 IST" finished-at="2022-10-30T08:55:40 IST">
+    <test name="Test" duration-ms="81" started-at="2022-11-05T09:09:42 IST" finished-at="2022-11-05T09:09:42 IST">
+      <class name="test.Grouping">
+        <test-method status="PASS" signature="testcaseOne()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseOne" duration-ms="8" started-at="2022-11-05T09:09:42 IST" finished-at="2022-11-05T09:09:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="validLogin" duration-ms="874" started-at="2022-10-30T08:55:40 IST" finished-at="2022-10-30T08:55:40 IST">
+        </test-method> <!-- testcaseOne -->
+        <test-method status="PASS" signature="testcaseTwo()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseTwo" duration-ms="1" started-at="2022-11-05T09:09:42 IST" depends-on-methods="test.Grouping.testcaseOne" finished-at="2022-11-05T09:09:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="pimTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="pimTest" duration-ms="3760" started-at="2022-10-30T08:55:40 IST" depends-on-methods="test.DependsOnLogin.validLogin" finished-at="2022-10-30T08:55:44 IST">
+        </test-method> <!-- testcaseTwo -->
+        <test-method status="PASS" signature="testcaseThree()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseThree" duration-ms="3" started-at="2022-11-05T09:09:42 IST" depends-on-methods="test.Grouping.testcaseTwo" finished-at="2022-11-05T09:09:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pimTest -->
-        <test-method status="PASS" signature="addEmployeeTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="addEmployeeTest" duration-ms="779" started-at="2022-10-30T08:55:44 IST" depends-on-methods="test.DependsOnLogin.pimTest" finished-at="2022-10-30T08:55:45 IST">
+        </test-method> <!-- testcaseThree -->
+        <test-method status="PASS" signature="testcaseFour()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseFour" duration-ms="2" started-at="2022-11-05T09:09:42 IST" depends-on-methods="test.Grouping.testcaseThree" finished-at="2022-11-05T09:09:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.DependsOnLogin@e52dcd]" name="afterTest" is-config="true" duration-ms="802" started-at="2022-10-30T08:55:45 IST" finished-at="2022-10-30T08:55:46 IST">
+        </test-method> <!-- testcaseFour -->
+        <test-method status="PASS" signature="testcaseFive()[pri:0, instance:test.Grouping@14ddd49]" name="testcaseFive" duration-ms="2" started-at="2022-11-05T09:09:42 IST" depends-on-methods="test.Grouping.testcaseFour" finished-at="2022-11-05T09:09:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.DependsOnLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testcaseFive -->
+      </class> <!-- test.Grouping -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
