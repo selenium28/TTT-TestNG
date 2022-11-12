@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.LoginScenario">
+      <class name="para.DataProvider">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="validLogin"/>
-          <include name="afterMethod"/>
-          <include name="inValidLogin"/>
+          <include name="dataProvider" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- core.LoginScenario -->
+      </class> <!-- para.DataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
