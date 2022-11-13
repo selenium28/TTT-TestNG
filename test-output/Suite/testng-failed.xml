@@ -6,7 +6,7 @@
     <classes>
       <class name="para.Parameterization">
         <methods>
-          <include name="testCase"/>
+          <include name="testCase" invocation-numbers="0"/>
         </methods>
       </class> <!-- para.Parameterization -->
     </classes>

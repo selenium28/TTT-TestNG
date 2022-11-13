@@ -16,6 +16,9 @@ public class LoginScenario {
 
 	@Test (priority = 3)
 	public void inValidLogin() {
+		
+		WebDriver driver = new ChromeDriver();
+		
 		WebElement username = driver.findElement(By.name("username")); 
 		username.sendKeys("Test");
 		WebElement password = driver.findElement(By.name("password")); 
