@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28288" started-at="2022-11-13T09:03:59 IST" finished-at="2022-11-13T09:04:27 IST">
+  <suite name="Default suite" duration-ms="32090" started-at="2022-11-19T09:49:00 IST" finished-at="2022-11-19T09:49:32 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28288" started-at="2022-11-13T09:03:59 IST" finished-at="2022-11-13T09:04:27 IST">
-      <class name="window.AssertClass">
-        <test-method status="PASS" signature="verify()[pri:0, instance:window.AssertClass@707e36]" name="verify" duration-ms="27337" started-at="2022-11-13T09:03:59 IST" finished-at="2022-11-13T09:04:26 IST">
+    <test name="Default test" duration-ms="32090" started-at="2022-11-19T09:49:00 IST" finished-at="2022-11-19T09:49:32 IST">
+      <class name="screen.ScreenshotClass">
+        <test-method status="PASS" signature="screen()[pri:0, instance:screen.ScreenshotClass@707e36]" name="screen" duration-ms="31931" started-at="2022-11-19T09:49:00 IST" finished-at="2022-11-19T09:49:32 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify -->
-      </class> <!-- window.AssertClass -->
+        </test-method> <!-- screen -->
+      </class> <!-- screen.ScreenshotClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
