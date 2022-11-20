@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="window.AssertClass">
+      <class name="screen.CaptureScreen">
         <methods>
-          <include name="verify"/>
+          <include name="captureScreenMethod"/>
+          <include name="captureScreenShot"/>
         </methods>
-      </class> <!-- window.AssertClass -->
+      </class> <!-- screen.CaptureScreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
